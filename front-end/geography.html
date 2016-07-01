@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geography</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+	 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dialog.css" rel="stylesheet">
+
+    <script src="js/bootstrap-dialog.js"></script>
+
+
+
+    
+ 
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">NAMMA CHENNAI  !</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="history.html">HISTORY</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="geography.html">GEOGRAPHY :P</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">PLACES TO VISIT <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="JavaScript:newPopup('marina.html');">Marina</a>
+                            </li>
+							<li>
+                                <a href="JavaScript:newPopup('vandalurzoo.html');">Vandalur Zoo</a>
+                            </li>
+                            <li>
+                                <a href="JavaScript:newPopup('valluvarkottam.html');">Valluvar Kottam</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="metro.html">NAMMA METRO</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   <header class="intro-header" style="background-image: url('img/geography/adyar.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h2>A beautiful aerial view of the Chennai City</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Chennai is located at 13.04°N 80.17°E on the southeast coast of India and in the northeast corner of Tamil Nadu. It is located on a flat coastal plain known as the Eastern Coastal Plains. The city has an average elevation of 6 metres (20 ft), its highest point being 60 m (200 ft).</p>
+
+                    <p>The geology of Chennai comprises mostly clay, shale and sandstone. The city is classified into three regions based on geology, sandy areas, clayey areas and hard-rock areas. Sandy areas are found along the river banks and the coasts. Clayey regions cover most of the city. Hard rock areas are Guindy, Velachery, Adambakkam and a part of Saidapet.</p>
+
+                    <p>In sandy areas such as Tiruvanmiyur, Adyar, Kottivakkam, Santhome, George Town, Tondiarpet and the rest of coastal Chennai, rainwater run-off percolates very quickly. In clayey and hard rock areas, rainwater percolates slowly, but it is held by the soil for a longer time. The city's clayey areas include T. Nagar, West Mambalam, Anna Nagar, Perambur and Virugambakkam.</p>
+					
+					<h2 class="section-heading">Climate</h2>
+
+                    <p>Chennai features a tropical wet and dry climate. Chennai lies on the thermal equator and is also coastal, which prevents extreme variation in seasonal temperature. For most of the year, the weather is hot and humid. The hottest part of the year is late May and early June, known locally as Agni Nakshatram ("fiery star") or as Kathiri Veyyil, with maximum temperatures around 38–42 °C (100–108 °F). The coolest part of the year is January, with minimum temperatures around 18–20 °C (64–68 °F). </p>
+
+                    <blockquote>The lowest temperature recorded is −3 °C (27 °F) and highest 45 °C (113 °F)(30 May 2003)</blockquote>
+
+                    <p>The average annual rainfall is about 1,400 mm (55 in). The city gets most of its seasonal rainfall from the north-east monsoon winds, from mid-September to mid-December. Cyclones in the Bay of Bengal sometimes hit the city. Highest annual rainfall recorded is 2,570 mm in 2005. The most prevailing winds in Chennai is the Southwesterly between the end of May to end of September and the Northeasterly during the rest of the year.</p>
+					
+					<h2 class="section-heading">Water Bodies</h2>
+
+                    <p>Two rivers meander through Chennai, the Cooum River (or Koovam) in the central region and the Adyar River in the southern region. Both rivers are heavily polluted with effluents and trash from domestic and commercial sources. The Adyar, which is much less polluted than the Cooum, is de-silted and cleaned periodically by the state government. A protected estuary of the Adyar forms the natural habitat of several species of birds and animals. The Buckingham Canal, 4 km (2.5 mi) inland, travels parallel to the coast, linking the two rivers. The Otteri Nullah, an east-west stream runs through north Chennai and meets the Buckingham Canal at Basin Bridge. Several lakes of varying size are located on the western fringes of the city. Red Hills, Sholavaram and Chembarambakkam Lake supply Chennai with potable water. Groundwater sources are mostly brackish.</p>
+
+                    
+                        <img  id="myImg" src="img/geography/lake.jpg" alt="Chembarambakkam Lake">
+
+                        <div id="myModal" class="modal">
+                            <span class="close" style="color:#ffffff"><h1>x</h1></span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                            </div>
+                    
+                    <span class="caption text-muted">Chembarambakkam Lake</span>
+
+                    <p>Historically, Chennai has faced a problem of water supply shortages as no big river flows through it with a resulting over-reliance on annual monsoon rains to replenish water reservoirs. The city's ground water levels have been depleted to very low levels in many areas. Many residents buy their drinking water. An earlier Veeranam project was unsuccessful in solving the city's water supply shortages, but the New Veeranam project which became operational in September 2004 has greatly reduced dependency on distant sources. In recent years however, due to heavy and consistent monsoon rains and the implementation of rainwater harvesting (RWH) techniques by Chennai Metrowater at their Anna Nagar Rain Centre, water shortages have been reduced significantly, and this has led Chennai to be a model of RWH technology for other cities. Moreover, newer projects like the Telugu Ganga canal project that brings water from water-surplus rivers like the Krishna river in Andhra Pradesh have eased water supply shortages. The city is also constructing sea water desalination plants to further ease water supply shortages.</p>
+
+                    <h2 class="section-heading">Layout</h2>
+
+                    <p>For administrative purposes Chennai is divided into five talukas; namely Egmore-Nungambakam, Fort Tondiarpet, Mambalam-Guindy, Mylapore-Triplicane and Perambur-Purasawalkkam. The city is divided on the basis of composition into four major parts: North, Central, South and West.</p>
+
+                    <blockquote>The Chennai Metropolitan area consists of three districts namely Chennai city and the districts of Kanchipuram and Thiruvallur. The city area covers an area of 476 km2 (184 sq mi). The metropolitan area covers 1,177 km2 (455  mi²).</blockquote>
+
+                    <p>North Chennai is primarily an industrial area. Central Chennai is the commercial heart of the city and the downtown area. South Chennai and West Chennai, previously predominantly residential areas are fast turning into commercial areas, hosting a large number of IT and financial companies. The city is fast expanding along the Old Mahabalipuram Road, GST Road, Sriperumbdur, Koyambedu and Ambattur.
+
+The Chennai Metropolitan Development Authority has drafted a Second Master Plan for Chennai, that aims to develop a satellite townships around the city. Contiguous satellite towns include Mahabalipuram to the south, Chengalpattu and Maraimalai Nagar to the south west, Kanchipuram town, Sriperumpudur, Tiruvallur and Arakkonam to the west.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+	
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+   
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=500,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>

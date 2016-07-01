@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Geography</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+	 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dialog.css" rel="stylesheet">
+
+    <script src="js/bootstrap-dialog.js"></script>
+
+
+
+    
+ 
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">NAMMA CHENNAI  !</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="history.html">HISTORY</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="geography.html">GEOGRAPHY :P</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">PLACES TO VISIT <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="JavaScript:newPopup('marina.html');">Marina</a>
+                            </li>
+							<li>
+                                <a href="JavaScript:newPopup('vandalurzoo.html');">Vandalur Zoo</a>
+                            </li>
+                            <li>
+                                <a href="JavaScript:newPopup('valluvarkottam.html');">Valluvar Kottam</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="metro.html">NAMMA METRO</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   <header class="intro-header" style="background-image: url('img/central/1.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h2>The Central !</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Chennai Central, erstwhile Madras Central, is the main railway terminus in the city of Chennai, formerly known as Madras. It lies adjacent to the current headquarters of the Southern Railway, as well as the Ripon Building, and is one of the most important railway hubs in South India.Chennai Central connects the city to New Delhi and prominent cities of India such as Ahmedabad, Bangalore, Bhopal, Coimbatore, Hyderabad, Jaipur, Kolkata, Lucknow, Mumbai, Patna, Varanasi, Thiruvananthapuram, and so forth.</p>
+
+                    <p>Chennai Central serves as a symbolic landmark for people in South India as this station served as the main gateway for all people who travelled to South India during the British times. About 350,000 passengers use the terminus every day. Chennai Egmore, Coimbatore Junction and Chennai Central are the most profitable stations of Southern Railways. As per a report published in 2007 by the Indian Railways, Chennai Central and Secunderabad were awarded 183 points out of a maximum of 300 for cleanliness, the highest in the country</p>
+
+                    					
+					<h2 class="section-heading">History</h2>
+
+                    <p>Marking the initial days of the railways in the Indian Subcontinent, the Madras Railway Company began to network South India in 1856. The first station was built at Royapuram, which remained the main station at that time. Expansion of the Madras Railways network, particularly the completion of the Madras–Vyasarpadi line, called for a second station in Madras, resulting in Madras Central coming into being </p>
+
+                    <blockquote>The station was built on the open grounds that had once been called John Pereira's Gardens, belonging to Joao Pereira de Faria (John Pereira), a Portuguese merchant in the port town of Negapatam (present day Nagapattinam) who settled in Madras in 1660.</blockquote>
+
+                    <p>In 1907, Madras Central was made the Madras Railway Company's main station. The station gained prominence after the beach line was extended further south in the same year, and Royapuram was no longer a terminus for Madras. All trains were then terminated at Madras Central instead. The Madras and Southern Mahratta Railway Company was formed in 1908 and took over the Central station from the Madras Railway Company. The station's position was further strengthened after the construction of the headquarters of the Madras and Southern Mahratta Railway (erstwhile Madras Railway and now known as the Southern Railway) adjacent to it in 1922</p>
+					
+					<h2 class="section-heading">Location</h2>
+
+                    <p>The terminus lies on the southern arm of the diamond junction of Chennai's railway network, where all the lines of the Chennai Suburban Railway meet. The terminus is located about 19 km from Chennai International Airport. The main entrance is located at Park Town at the intersection of the arterial Poonamallee High Road, Pallavan Salai, and Wall Tax Road between the People's Park and the Southern Railways headquarters.</p>
+
+                    
+                        <img  id="myImg" src="img/central/2.jpg" alt="Central Station seen from the western banks of Buckingham canal, c.1880">
+
+                        <div id="myModal" class="modal">
+                            <span class="close" style="color:#ffffff"><h1>x</h1></span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                            </div>
+                    
+                    <span class="caption text-muted">Central Station</span>
+
+                    <p>The station premises is located on either side of the Buckingham Canal, formerly known as Cochrane's Canal, which separates the main station and the suburban terminus. Wall Tax Road runs alongside the station on the eastern side. There are two other entrances on the eastern and western sides of the complex. The eastern entrance on Wall Tax Road leads to platform no. 1, and the western entrance lies at the entrance of the suburban terminus. The station is connected with the Park railway station and the Government General Hospital, both located across the road, by means of subways. During the building of the Chennai Metro the connection from Chennai Park to Chennai Central is by means of a steel footbridge.</p>
+
+                    
+
+                    
+                </div>
+            </div>
+        </div>
+    </article>
+	
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+   
+<script type="text/javascript">
+// Popup window code
+function newPopup(url) {
+    popupWindow = window.open(
+        url,'popUpWindow','height=500,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+</body>
+
+</html>
